@@ -12,6 +12,9 @@ data = {
     'General Waste (tons)': [random.randint(1000, 50000) for _ in years],
 }
 
+
+
+
 # Generate "Total Waste" to be directly proportional to the year
 year_to_total_waste_ratio = 100  # Adjust this factor as needed
 data['Total Waste (tons)'] = [year * year_to_total_waste_ratio + random.randint(100, 500) for year in data['Year']]
